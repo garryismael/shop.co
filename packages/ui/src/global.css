@@ -1,3 +1,31 @@
 @source "./";
-@import "./styles/satoshi.css";
-@import "./styles/integral-cf.css";
+
+@theme {
+  /* Integral CF */
+  --font-integral-cf-bold-oblique: "Integral-CF-Bold-Oblique";
+  --font-integral-cf-demi-bold-oblique: "Integral-CF-Demi-Bold-Oblique";
+  --font-integral-cf-demi-bold: "Integral-CF-Demi-Bold";
+  --font-integral-cf-extra-bold-oblique: "Integral-CF-Extra-Bold-Oblique";
+  --font-integral-cf-extra-bold: "Integral-CF-Extra-Bold";
+  --font-integral-cf-heavy-oblique: "Integral-CF-Heavy-Oblique";
+  --font-integral-cf-heavy: "Integral-CF-Heavy";
+  --font-integral-cf-bold: "Integral-CF-Bold";
+  --font-integral-cf-medium-oblique: "Integral-CF-Medium-Oblique";
+  --font-integral-cf-medium: "Integral-CF-Medium";
+  --font-integral-cf-regular-oblique: "Integral-CF-Regular-Oblique";
+  --font-integral-cf-regular: "Integral-CF-Regular";
+
+  /* Satoshi */
+  --font-satoshi-variable: "Satoshi-Variable";
+  --font-satoshi-variable-italic: "Satoshi-VariableItalic";
+  --font-satoshi-light: "Satoshi-Light";
+  --font-satoshi-light-italic: "Satoshi-LightItalic";
+  --font-satoshi-regular: "Satoshi-Regular";
+  --font-satoshi-italic: "Satoshi-Italic";
+  --font-satoshi-medium: "Satoshi-Medium";
+  --font-satoshi-medium-italic: "Satoshi-MediumItalic";
+  --font-satoshi-bold: "Satoshi-Bold";
+  --font-satoshi-bold-italic: "Satoshi-BoldItalic";
+  --font-satoshi-black: "Satoshi-Black";
+  --font-satoshi-black-italic: "Satoshi-BlackItalic";
+}

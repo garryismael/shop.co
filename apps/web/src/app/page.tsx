@@ -1,5 +1,9 @@
-import { ProductCard } from "@ui/components/Product";
+import TopHeader from "@/components/TopHeader";
 
 export default function Home() {
-  return <ProductCard />
+  return (
+    <>
+      <TopHeader />
+    </>
+  );
 }

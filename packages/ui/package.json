@@ -17,6 +17,8 @@
   },
   "exports": {
     "./global.css": "./src/global.css",
+    "./satoshi.css": "./src/styles/satoshi.css",
+    "./integral-cf.css": "./src/styles/integral-cf.css",
     "./components/*": "./src/components/*",
     "./components/ui/*": "./src/components/ui/*"
   }
