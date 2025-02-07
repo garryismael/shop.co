@@ -1,0 +1,23 @@
+{
+  "name": "@repo/ui",
+  "version": "1.0.0",
+  "description": "Shared ui",
+  "main": "index.js",
+  "author": "Garry",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "tailwindcss": "^4.0.4"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*"
+  },
+  "exports": {
+    "./global.css": "./src/global.css",
+    "./components/*": "./src/components/*",
+    "./components/ui/*": "./src/components/ui/*"
+  }
+}

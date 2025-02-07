@@ -1,0 +1,26 @@
+{
+  "name": "shop.co",
+  "version": "1.0.0",
+  "description": "E-commerce shop",
+  "main": "index.js",
+  "repository": "shop.co",
+  "author": "Garry Ismael",
+  "license": "MIT",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "packageManager": "yarn@1.22.22",
+  "devDependencies": {
+    "eslint": "^9.19.0",
+    "prettier": "^3.4.2",
+    "turbo": "^2.4.0"
+  }
+}
