@@ -1,0 +1,77 @@
+@font-face {
+  font-family: "Integral-CF-Bold-Oblique";
+  src: url("../fonts/integral-cf/bold-oblique.otf") format("opentype");
+  font-weight: bold;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Demi-Bold-Oblique";
+  src: url("../fonts/integral-cf/demi-bold-oblique.otf") format("opentype");
+  font-weight: 600;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Demi-Bold";
+  src: url("../fonts/integral-cf/demibold.otf") format("opentype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Integral-CF-Extra-Bold-Oblique";
+  src: url("../fonts/integral-cf/extra-bold-oblique.otf") format("opentype");
+  font-weight: 800;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Extra-Bold";
+  src: url("../fonts/integral-cf/extrabold.otf") format("opentype");
+  font-weight: 800;
+}
+
+@font-face {
+  font-family: "Integral-CF-Heavy-Oblique";
+  src: url("../fonts/integral-cf/heavy-oblique.otf") format("opentype");
+  font-weight: 900;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Heavy";
+  src: url("../fonts/integral-cf/heavy.otf") format("opentype");
+  font-weight: 900;
+}
+
+@font-face {
+  font-family: "Integral-CF-Bold";
+  src: url("../fonts/integral-cf/bold.otf") format("opentype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Integral-CF-Medium-Oblique";
+  src: url("../fonts/integral-cf/medium-oblique.otf") format("opentype");
+  font-weight: 500;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Medium";
+  src: url("../fonts/integral-cf/medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Integral-CF-Regular-Oblique";
+  src: url("../fonts/integral-cf/regular-oblique.otf") format("opentype");
+  font-weight: normal;
+  font-style: oblique;
+}
+
+@font-face {
+  font-family: "Integral-CF-Regular";
+  src: url("../fonts/integral-cf/regular.otf") format("opentype");
+  font-weight: normal;
+}
