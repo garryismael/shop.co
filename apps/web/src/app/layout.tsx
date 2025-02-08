@@ -2,7 +2,7 @@ import "@repo/ui/integral-cf.css";
 import "@repo/ui/satoshi.css";
 import type { Metadata } from "next";
 import "./globals.css";
-
+import Providers from "./providers";
 
 export const metadata: Metadata = {
   title: "Shop.co",
@@ -17,7 +17,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );

@@ -25,6 +25,7 @@
     "./integral-cf.css": "./src/styles/integral-cf.css",
     "./components/*": "./src/components/*",
     "./components/ui/*": "./src/components/ui/*",
-    "./lib": "./src/lib/*"
+    "./lib": "./src/lib/*",
+    "./models": "./src/models/*"
   }
 }
