@@ -1,3 +1,4 @@
+import Companies from "@/components/Companies";
 import StatsOverview from "@/components/StatsOverview";
 import { stats } from "@/constants/hero";
 import { Button } from "@ui/components/ui/button";
@@ -35,6 +36,7 @@ const HeroSection = () => {
         <Image src="/images/stroke-1.svg" alt="stroke" width={104} height={104} className="absolute right-5 top-14 h-16 w-16" />
         <Image src="/images/stroke-2.svg" alt="stroke" width={56} height={56} className="absolute left-7 top-1/3 h-11 w-11" />
       </div>
+      <Companies/>
     </section>
   );
 };
