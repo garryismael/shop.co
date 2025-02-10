@@ -1,0 +1,36 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Vertical Striped Shirt",
+      "image": "/images/products/top-selling/vertical-striped.png",
+      "review": 5.0,
+      "price": 212,
+      "discount": 20
+    },
+    {
+      "id": 2,
+      "name": "Courage Graphic T-shirt",
+      "image": "/images/products/top-selling/courage-graphic.png",
+      "review": 4.0,
+      "price": 145,
+      "discount": 0
+    },
+    {
+      "id": 3,
+      "name": "Loose Fit Bermuda Shorts",
+      "image": "/images/products/top-selling/loose-fit.png",
+      "review": 3.0,
+      "price": 80,
+      "discount": 0
+    },
+    {
+      "id": 4,
+      "name": "Faded Skinny Jeans",
+      "image": "/images/products/top-selling/faded-skinny.png",
+      "review": 4.5,
+      "price": 210,
+      "discount": 0
+    }
+  ]
+}
