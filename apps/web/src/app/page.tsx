@@ -1,8 +1,10 @@
 import Navbar from "@/components/NavBar";
 import TopHeader from "@/components/TopHeader";
+import BrowseBy from "@/sections/home/BrowseBy";
 import HeroSection from "@/sections/home/HeroSection";
 import NewArrival from "@/sections/home/NewArrival";
-import { getNewArrivals } from "@/services/product";
+import TopSelling from "@/sections/home/TopSelling";
+import { getNewArrivals, getTopSelling } from "@/services/product";
 import {
   dehydrate,
   HydrationBoundary,
@@ -16,6 +18,11 @@ export default async function Home() {
     queryFn: getNewArrivals,
   });
 
+  await queryClient.prefetchQuery({
+    queryKey: ["get-top-selling-products"],
+    queryFn: getTopSelling,
+  });
+
   return (
     <>
       <TopHeader />
@@ -23,7 +30,9 @@ export default async function Home() {
       <HeroSection />
       <HydrationBoundary state={dehydrate(queryClient)}>
         <NewArrival />
+        <TopSelling />
       </HydrationBoundary>
+      <BrowseBy />
     </>
   );
 }

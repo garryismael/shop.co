@@ -7,3 +7,10 @@ export const getNewArrivals = async () => {
   );
   return response.data.data;
 };
+
+export const getTopSelling = async () => {
+  const response = await request.get<{ data: Array<Product> }>(
+    "/data/top-selling.json"
+  );
+  return response.data.data;
+};

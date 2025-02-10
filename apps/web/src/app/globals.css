@@ -7,7 +7,11 @@ body {
 }
 
 @layer utility {
+  .wrapper {
+    max-width: 1440px;
+  }
+
   .title {
-    @apply text-[32px] lg:text-5xl text-center font-integral-cf-bold font-bold text-black;
+    @apply text-[32px] lg:text-5xl text-center font-integral-cf-bold font-bold text-black leading-8;
   }
 }

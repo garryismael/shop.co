@@ -3,7 +3,7 @@ import { AlignJustify, CircleUser, Search, ShoppingCart } from "lucide-react";
 
 const Navbar = () => {
   return (
-    <header className="flex justify-between items-center bg-white py-6 fixed top-9 left-0 right-0 px-4 h-16">
+    <header className="flex justify-between items-center bg-white py-6 fixed top-9 left-0 right-0 px-4 h-16 z-40">
       <div className="flex items-center gap-4">
         <AlignJustify size={24} />
         <Logo />

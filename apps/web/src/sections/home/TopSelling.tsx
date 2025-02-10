@@ -1,10 +1,10 @@
 "use client";
 
 import ProductList from "@/components/ProductList";
-import { useGetNewArrivalsProducts } from "@/hooks/useProduct";
+import { useGetTopSellingProducts } from "@/hooks/useProduct";
 
-const NewArrival = () => {
-  const { products, isLoading, isError } = useGetNewArrivalsProducts();
+const TopSelling = () => {
+  const { products, isLoading, isError } = useGetTopSellingProducts();
   if (isLoading) {
     return <div>Loading...</div>;
   }
@@ -15,12 +15,11 @@ const NewArrival = () => {
 
   return (
     <ProductList
-      title="New Arrival"
+      title="Top Selling"
       products={products!}
       classNameContainer="px-2"
-      classNameWrapper="border-b border-b-black/10"
     />
   );
 };
 
-export default NewArrival;
+export default TopSelling;

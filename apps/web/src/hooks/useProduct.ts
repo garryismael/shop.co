@@ -1,4 +1,4 @@
-import { getNewArrivals } from "@/services/product";
+import { getNewArrivals, getTopSelling } from "@/services/product";
 import { useQuery } from "@tanstack/react-query";
 
 export const useGetNewArrivalsProducts = () => {
@@ -9,3 +9,12 @@ export const useGetNewArrivalsProducts = () => {
 
   return { products, isLoading , isError};
 };
+
+export const useGetTopSellingProducts = () => {
+  const { data: products, isLoading, isError } = useQuery({
+    queryKey: ["get-top-selling-products"],
+    queryFn: () => getTopSelling(),
+  });
+
+  return { products, isLoading , isError};
+}

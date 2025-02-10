@@ -1,6 +1,6 @@
 import Companies from "@/components/Companies";
 import StatsOverview from "@/components/StatsOverview";
-import { stats } from "@/constants/hero";
+import { stats } from "@/constants/home";
 import { Button } from "@ui/components/ui/button";
 import Image from "next/image";
 
@@ -8,7 +8,7 @@ const HeroSection = () => {
   return (
     <section className="bg-white-smoke pt-32">
       <div className="px-4">
-        <h1 className="uppercase font-integral-cf-bold text-4xl">
+        <h1 className="uppercase font-integral-cf-bold text-4xl leading-[34px]">
           FIND CLOTHES THAT MATCHES YOUR STYLE
         </h1>
         <p className="text-sm text-black/60 mt-5">
