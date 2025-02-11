@@ -1,5 +1,3 @@
-import Navbar from "@/components/NavBar";
-import TopHeader from "@/components/TopHeader";
 import BrowseBy from "@/sections/home/BrowseBy";
 import HeroSection from "@/sections/home/HeroSection";
 import NewArrival from "@/sections/home/NewArrival";
@@ -33,8 +31,6 @@ export default async function Home() {
 
   return (
     <>
-      <TopHeader />
-      <Navbar />
       <HeroSection />
       <HydrationBoundary state={dehydrate(queryClient)}>
         <NewArrival />

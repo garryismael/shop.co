@@ -1,5 +1,5 @@
 @import "tailwindcss";
-@import 'tailwindcss/utilities';
+@import "tailwindcss/utilities";
 @import "@repo/ui/global.css";
 
 body {
@@ -13,5 +13,27 @@ body {
 
   .title {
     @apply text-[32px] lg:text-5xl text-center font-integral-cf-bold font-bold text-black leading-8;
+  }
+
+  .social {
+    @apply w-7 h-7 border border-black/20 flex items-center justify-center rounded-full hover:bg-black hover:text-white;
+  }
+
+  .social svg {
+    @apply text-sm;
+  }
+
+  .footer__link {
+    @apply text-sm text-black/60 leading-4;
+  }
+
+  .payments {
+    @apply flex items-center gap-[10px] flex-wrap;
+  }
+
+  .payments a {
+    @apply py-2 px-1.5 bg-white border border-[#D6DCE5] rounded-sm;
+    filter: drop-shadow(0px 0.384px 3.842px rgba(183, 183, 183, 0.08))
+      drop-shadow(0px 3.842px 7.684px rgba(183, 183, 183, 0.08));
   }
 }

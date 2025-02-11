@@ -3,6 +3,9 @@ import "@repo/ui/satoshi.css";
 import type { Metadata } from "next";
 import "./globals.css";
 import Providers from "./providers";
+import TopHeader from "@/components/TopHeader";
+import Navbar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Shop.co",
@@ -17,7 +20,12 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <Providers>{children}</Providers>
+        <Providers>
+          <TopHeader />
+          <Navbar />
+          {children}
+          <Footer />
+        </Providers>
       </body>
     </html>
   );
