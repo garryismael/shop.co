@@ -3,8 +3,10 @@ import TopHeader from "@/components/TopHeader";
 import BrowseBy from "@/sections/home/BrowseBy";
 import HeroSection from "@/sections/home/HeroSection";
 import NewArrival from "@/sections/home/NewArrival";
+import TestimonialSection from "@/sections/home/Testimonial";
 import TopSelling from "@/sections/home/TopSelling";
 import { getNewArrivals, getTopSelling } from "@/services/product";
+import { getTestimonials } from "@/services/testimonial";
 import {
   dehydrate,
   HydrationBoundary,
@@ -23,6 +25,11 @@ export default async function Home() {
     queryFn: getTopSelling,
   });
 
+  await queryClient.prefetchQuery({
+    queryKey: ["get-testimonials"],
+    queryFn: getTestimonials
+  })
+
   return (
     <>
       <TopHeader />
@@ -33,6 +40,9 @@ export default async function Home() {
         <TopSelling />
       </HydrationBoundary>
       <BrowseBy />
+      <HydrationBoundary state={dehydrate(queryClient)}>
+        <TestimonialSection />
+      </HydrationBoundary>
     </>
   );
 }
