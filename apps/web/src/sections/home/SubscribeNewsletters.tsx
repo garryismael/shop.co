@@ -12,14 +12,14 @@ const SubscribeNewsletters = () => {
         <form className="w-full pt-8">
           <div className="w-full relative">
             <Input
-              className="rounded-full w-full py-3 pr-4 pl-12 bg-white"
+              className="rounded-full w-full py-3 pr-4 pl-12 bg-white placeholder:text-sm"
               placeholder="Enter your email address"
             />
             <Mail className="text-black/40 absolute top-1/2 left-3.5 -translate-y-1/2" />
           </div>
           <Button
             variant="outline"
-            className="mt-3 w-full rounded-full font-satoshi-medium font-medium text-xs">
+            className="mt-3 w-full rounded-full font-satoshi-medium font-medium text-sm">
             Subscribe to Newsletter
           </Button>
         </form>
