@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
           </div>
           <div>
-            <h3 className="uppercase text-black leading-[18px] text-xs font-satoshi-medium font-medium tracking-[3px]">
+            <h3 className="uppercase text-black leading-[18px] text-sm font-satoshi-medium font-medium tracking-[3px]">
               Company
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
@@ -59,7 +59,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="uppercase text-black leading-[18px] text-xs font-satoshi-medium font-medium tracking-[3px]">
+            <h3 className="uppercase text-black leading-[18px] text-sm font-satoshi-medium font-medium tracking-[3px]">
               Help
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
@@ -86,7 +86,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="uppercase text-black leading-[18px] text-xs font-satoshi-medium font-medium tracking-[3px]">
+            <h3 className="uppercase text-black leading-[18px] text-sm font-satoshi-medium font-medium tracking-[3px]">
               Faq
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
@@ -113,7 +113,7 @@ const Footer = () => {
             </ul>
           </div>
           <div>
-            <h3 className="uppercase text-black leading-[18px] text-xs font-satoshi-medium font-medium tracking-[3px]">
+            <h3 className="uppercase text-black leading-[18px] text-sm font-satoshi-medium font-medium tracking-[3px]">
               Resources
             </h3>
             <ul className="mt-4 flex flex-col gap-2">
