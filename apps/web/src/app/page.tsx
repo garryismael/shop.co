@@ -3,6 +3,7 @@ import TopHeader from "@/components/TopHeader";
 import BrowseBy from "@/sections/home/BrowseBy";
 import HeroSection from "@/sections/home/HeroSection";
 import NewArrival from "@/sections/home/NewArrival";
+import SubscribeNewsletters from "@/sections/home/SubscribeNewsletters";
 import TestimonialSection from "@/sections/home/Testimonial";
 import TopSelling from "@/sections/home/TopSelling";
 import { getNewArrivals, getTopSelling } from "@/services/product";
@@ -43,6 +44,7 @@ export default async function Home() {
       <HydrationBoundary state={dehydrate(queryClient)}>
         <TestimonialSection />
       </HydrationBoundary>
+      <SubscribeNewsletters />
     </>
   );
 }
