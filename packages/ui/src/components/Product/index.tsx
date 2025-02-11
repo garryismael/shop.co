@@ -1,5 +1,5 @@
 import { Product } from "@ui/models/product";
-import StarRating from "../StarRating";
+import Rating from "../Rating";
 
 type Props = {
   product: Product;
@@ -19,7 +19,7 @@ export const ProductCard = ({ product }: Props) => {
       <h2 className="font-bold capitalize text-base font-satoshi-bold py-1.5">
         {product.name}
       </h2>
-      <StarRating rating={product.review} />
+      <Rating rating={product.review} />
       <div className="flex items-center gap-1.5 pt-1.5">
         <span className="text-xl font-satoshi-bold font-bold text-black">
           ${price}
