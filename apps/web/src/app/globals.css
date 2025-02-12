@@ -3,7 +3,7 @@
 @import "@repo/ui/global.css";
 
 body {
-  @apply font-satoshi-regular;
+  @apply font-satoshi-regular overflow-x-hidden;
 }
 
 @layer utility {
@@ -13,6 +13,10 @@ body {
 
   .title {
     @apply text-[32px] lg:text-5xl text-center font-integral-cf-bold font-bold text-black leading-8;
+  }
+
+  .paragraph {
+    @apply text-sm text-black/60 leading-5;
   }
 
   .social {
