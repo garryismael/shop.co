@@ -6,7 +6,7 @@ const Page = async ({ params }: { params: Promise<{ id: string }> }) => {
   const id = (await params).id;
   const queryClient = new QueryClient();
   await queryClient.prefetchQuery({
-    queryKey: ["get-product-detail"],
+    queryKey: ["get-product-detail", id],
     queryFn: () => getProductDetail(id),
   });
   return (
