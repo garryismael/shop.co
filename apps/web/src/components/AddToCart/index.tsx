@@ -26,10 +26,10 @@ const AddToCart = ({ className = "", setCounter }: Props) => {
 
   return (
     <div className={`grid grid-cols-5 items-center gap-3 ${className}`}>
-      <div className="bg-light-grayish rounded-[62px] col-span-2 py-3 px-4 flex items-center gap-4">
-        <Minus onClick={handleMinus} size={20} />
+      <div className="relative bg-light-grayish rounded-[62px] col-span-2 py-3 px-4 flex items-center justify-around gap-4">
+        <Minus onClick={handleMinus} size={20} className="cursor-pointer absolute top-1/2 -translate-1/2 left-7"/>
         <span className="paragraph">{count}</span>
-        <Plus onClick={handlePlus} size={20} />
+        <Plus onClick={handlePlus} size={20} className="cursor-pointer absolute top-1/2 -translate-1/2 right-2"/>
       </div>
       <Button className="!py-3 rounded-[62px] w-full col-span-3">
         Add To Cart
