@@ -3,6 +3,7 @@
 import AddToCart from "@/components/AddToCart";
 import ColorPicker from "@/components/ColorPicker";
 import { ProductSizePicker, ProductSwitcher } from "@/components/product";
+import ProductDetailSkeleton from "@/components/skeleton/product";
 import { useGetProductDetail } from "@/hooks/useProduct";
 import { ProductPrice } from "@ui/components/Product";
 import Rating from "@ui/components/Rating";
@@ -25,7 +26,7 @@ const ProductDetail = ({ id }: Props) => {
   const [currentColor, setCurrentColor] = useState<number>(0);
   const [currentSize, setCurrentSize] = useState(0);
   const [counter, setCounter] = useState(0);
-
+  
   const handleColorChange = (index: number) => {
     setCurrentColor(index);
   };
@@ -36,7 +37,7 @@ const ProductDetail = ({ id }: Props) => {
   };
 
   if (isLoading) {
-    return <div className="pt-32">Loading...</div>;
+    return <ProductDetailSkeleton className="pt-32 px-4"/>
   }
 
   if (isError) {
@@ -60,12 +61,18 @@ const ProductDetail = ({ id }: Props) => {
             <BreadcrumbSeparator />
             <BreadcrumbItem>
               <BreadcrumbLink asChild>
-                <Link href="/components">Components</Link>
+                <Link href="/">Shop</Link>
               </BreadcrumbLink>
             </BreadcrumbItem>
             <BreadcrumbSeparator />
             <BreadcrumbItem>
-              <BreadcrumbPage className="text-black">Breadcrumb</BreadcrumbPage>
+              <BreadcrumbLink asChild>
+                <Link href="/components">Men</Link>
+              </BreadcrumbLink>
+            </BreadcrumbItem>
+            <BreadcrumbSeparator />
+            <BreadcrumbItem>
+              <BreadcrumbPage className="text-black">T-shirts</BreadcrumbPage>
             </BreadcrumbItem>
           </BreadcrumbList>
         </Breadcrumb>
@@ -108,7 +115,7 @@ const ProductDetail = ({ id }: Props) => {
             )}
           </>
         )}
-        <AddToCart setCounter={setCounter} className="pt-6"/>
+        <AddToCart setCounter={setCounter} className="pt-6" />
       </div>
     </section>
   );
