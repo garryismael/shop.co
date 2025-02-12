@@ -14,3 +14,11 @@ export const getTopSelling = async () => {
   );
   return response.data.data;
 };
+
+export const getProductDetail = async (id: string) => {
+  console.log(id);
+  const response = await request.get<{ data: Product | undefined }>(
+    "/data/product.json"
+  );
+  return response.data.data;
+};
